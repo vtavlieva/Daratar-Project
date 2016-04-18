@@ -1,0 +1,95 @@
+html {
+  padding:0;
+  margin:0;
+}
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+}
+.main{
+    padding-top:50px;
+    margin:0;
+    height:100%;
+    width:auto;
+    font-size: 16px;
+    text-align:justify;
+    background: url("../images/bookshelf.jpg");
+}
+
+#footer {
+    margin:0;
+    height: 2.5em;
+    padding:0;
+    background-color:#F8F8F8;
+    text-align: center;
+    box-shadow: 0px 0px 2px #cccccc;
+}
+#footer p{
+    padding-top:8px;
+}
+.context {
+   margin:0px;
+   padding:100px;
+}
+.btn-login {
+    background-color: #59B2E0;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+    color: #fff;
+    background-color: #53A3CD;
+    border-color: #53A3CD;
+}
+#h5login{
+    padding-left:40px;
+    padding-top:15px;
+}
+#logInfo{
+    padding-left:38%;
+}
+#table{
+    padding-left:4%;
+    width:100%;
+}
+#table, th, td {
+    border: 2px solid black;
+    text-align:center;
+}
+#h3Books{
+    padding-left: 45%;
+}
+#pagination{
+    padding-left:47%;
+}
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
+td{
+        word-wrap: break-word;
+        max-width: 150px;
+}

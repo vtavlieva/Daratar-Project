@@ -72,7 +72,7 @@ public class DaratarProjectAutomatedTestLoginFunctionality {
     @After
     public void TearDown()
     {
-
+        driver.close();
     }
 
 

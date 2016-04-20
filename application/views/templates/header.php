@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>BooksLibrary</title>
-        <script> var base_url='http://localhost/public_html/'; </script>
+        <script> var base_url='http://pdmtrades.eu/'; </script>
         <link  href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link  href="<?php echo base_url();?>assets/css/styles.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />

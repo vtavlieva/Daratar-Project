@@ -7,9 +7,9 @@ class Login extends REST_Controller{
         parent::__construct();
     }
     public function user_post(){
+        $this->load->model('login/Login_Model');
         $password=$this->post('password');
         $username=$this->post('username');
-        $this->load->model('login/Login_Model');
         $result=$this->Login_Model->login($username,$password);
         if($result){
             foreach($result as $row){

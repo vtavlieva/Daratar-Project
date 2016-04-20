@@ -27,4 +27,11 @@ Class Library_Model extends CI_Model{
         $query=$this->db->delete("books"); 
         return $query;
     }
+    public function search($searchedInfo){
+        $this->db->select("*");
+        $this->db->from("books");
+        $this->db->like("title",$searchedInfo);
+        $result=$this->db->get();
+        return $result->result_array();
+    }
 }

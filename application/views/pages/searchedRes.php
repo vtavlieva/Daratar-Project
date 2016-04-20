@@ -1,15 +1,16 @@
 <div class="col-md-8 col-md-offset-2">
     <div class="panel login-panel panel-default">
         <div class="panel-body">
-            <h3 id="h3Books">Books</h3>
-            <form action="searchedRes_post" method="POST">
-                <div class="form-inline">
-                    <input class="form-control input-sm" type="text" id="search" name="search" placeholder="Type name of a book..."/>
-                    <button type="submit" class="btn btn-default btn-sm">Search</button>
-                </div>
-            <form>
-            <br>
-                <table align="center">
+            <h3 id="searchH3">Searched Results</h3>
+            <table align="center">
+                <?php
+                if(empty($searchedRes)){?>
+                    
+                
+                    <tr>
+                        <td><?php echo "NO RESULTS";?></td>
+                    <tr>
+                <?php }else{ ?>
                     <tr>
                         <td></td>
                         <td>COVER</td>
@@ -21,9 +22,10 @@
                         <td>FORMAT</td>
                         <td>RESUME</td>
                     </tr>
-                <?php
-                $i=1;
-                    foreach($books as $book){?>
+                <?php 
+                    
+                    $i=1;
+                    foreach($searchedRes as $book){?>
                     <tr>
                         <td><?php echo $i;?></td>
                         <td><img height="50" width="50" src="<?php echo base_url();?>assets/images/<?php echo $book['image'];?>"/></td>
@@ -36,12 +38,10 @@
                         <td><?php echo $book['resume'];?></td>
                     </tr>
                     <?php $i++;} ?>
+                <?php } ?>
+                
                 </table>
-            <br>
-            <?php echo "<span id='pagination'>".$this->pagination->create_links()."</span>"; ?>
-            <br>
-            <button id="back" class="btn btn-primary" type="button">Back</button>
+            <button id="backToSee" class="btn btn-primary" type="button">Back</button>
         </div>
     </div>
 </div>
-

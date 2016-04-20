@@ -21,6 +21,13 @@ class See extends CI_Controller {
         $this->load->view('pages/see',$data);
         $this->load->view('templates/footer');
     }
+    public function searchedRes_post(){
+        $searchedInfo=$this->input->post("search");
+        $data['searchedRes']=$this->Library_Model->search($searchedInfo);
+        $this->load->view('templates/header');
+        $this->load->view('pages/searchedRes',$data);
+        $this->load->view('templates/footer');
+    }
 }
 
           

@@ -32,6 +32,10 @@ $(document).ready(function(){
     $("#back").click(function(){
        window.location.href = base_url+"index.php/Library/index";
     });
+    $("#backToSee").click(function(){
+       window.location.href = base_url+"index.php/See/index";
+    });
+
 ///////////////////////////////Date Picker//////////////////////////////////////
     $(".date-input").datepicker({
         format: 'yyyy-mm-dd',
